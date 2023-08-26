@@ -25,6 +25,8 @@ public class SampleRunnerClass {
 		byte[] s = ts.getScreenshotAs(OutputType.BYTES);
 		d.embed(s, "image/png");
 
+		System.out.println("scenario ends...");
+		
 	}
 	
 	

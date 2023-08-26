@@ -1,5 +1,6 @@
 package org.runnerclass;
 
+import org.junit.Test;
 import org.junit.AfterClass;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.OutputType;
@@ -16,7 +17,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(features="src\\test\\resources",glue="org.stepdefinitionclass")
 
 public class SampleRunnerClass {
-
+	
 	
 	public WebDriver driver;
 	@AfterClass
@@ -24,15 +25,19 @@ public class SampleRunnerClass {
 		TakesScreenshot ts=(TakesScreenshot)driver;
 		byte[] s = ts.getScreenshotAs(OutputType.BYTES);
 		d.embed(s, "image/png");
-
+		
 		System.out.println("scenario ends...");
 		
 	}
 	
-	
-	
+@Test
+public void tc1() {
+	// TODO Auto-generated method stub
+System.out.println("hi");
+}
 	
 	
 	
 	
 }
+	
